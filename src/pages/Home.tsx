@@ -92,7 +92,7 @@ function Home() {
                 </div>
             </section>
             {/* QR 코드 다운로드 섹션 */}
-            <section id="download-section" className="py-20 px-4 bg-gradient-to-br from-coral/10 via-amber/10 to-blue-50 snap-start min-h-screen">
+            <section id="download-section" className="py-20 px-4 bg-gradient-to-br from-coral/10 via-amber/10 to-blue-50 snap-start min-h-screen scroll-mt-24">
                 <div className="max-w-4xl mx-auto text-center">
                     <h2 className="text-4xl font-bold mb-6 text-gray-900">
                         지금 바로 다운로드하세요
