@@ -18,7 +18,7 @@ function Home() {
     return (
         <div className="min-h-screen bg-white snap-y snap-proximity overflow-y-scroll h-screen">
             {/* 헤더 */}
-            <header className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+            <header className="fixed top-0 w-full bg-white/50 backdrop-blur-md z-50 border-b border-gray-100">
                 <nav className="flex items-center justify-between p-4 max-w-7xl mx-auto">
                     <div className="text-3xl font-bold text-coral cursor-pointer" onClick={toTitle}>Only Pet's</div>
                     <button
