@@ -9,15 +9,38 @@ function Home() {
             downloadSection.scrollIntoView({ behavior: 'smooth' });
         }
     };
+    const toTitle = () => {
+        const titleSection = document.getElementById('title');
+        if (titleSection) {
+            titleSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
     return (
         <div className="min-h-screen bg-white snap-y snap-proximity overflow-y-scroll h-screen">
             {/* 헤더 */}
             <header className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
                 <nav className="flex items-center justify-between p-4 max-w-7xl mx-auto">
-                    <div className="text-xl font-bold text-coral">Only Pet's</div>
+                    <div className="text-3xl font-bold text-coral cursor-pointer" onClick={toTitle}>Only Pet's</div>
                     <button
+                        className="
+                            w-[200px] h-[55px] relative z-10
+                            text-white font-semibold text-base
+                            rounded-full
+                            cursor-pointer
+                            bg-gradient-to-r
+                            from-coral
+                            via-amber
+                            to-coral
+                            bg-[length:300%_100%]
+                            shadow-[0_4px_15px_rgba(255,122,92,0.6)]
+                            transition-all
+                            duration-400
+                            ease-in-out
+                            hover:bg-[position:100%_0]
+                            hover:shadow-[0_6px_20px_rgba(255,179,71,0.6)]
+                            active:scale-95
+                          "
                         onClick={scrollToDownload}
-                        className="relative bg-gradient-to-r from-coral to-amber text-white px-6 py-2 rounded-lg font-bold overflow-hidden group transition-all duration-300 hover:shadow-xl hover:shadow-coral/50 hover:scale-105"
                     >
                         <span className="relative z-10">다운로드</span>
                         <div className="absolute inset-0 bg-gradient-to-r from-amber to-coral opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -26,9 +49,9 @@ function Home() {
             </header>
 
             {/* 메인 Hero 섹션 */}
-            <section className="pt-32 pb-20 px-4 text-center">
+            <section id="title" className="pt-32 pb-20 px-4 text-center">
                 <span className="mb-4 inline-block rounded-full bg-amber-50 px-4 py-1.5 text-sm font-semibold text-coral">
-                  🐶 반려동물 전용 숏폼 플랫폼
+                    반려동물 전용 숏폼 플랫폼
                 </span>
                 <h1 className="mb-6 text-5xl font-extrabold tracking-tight text-gray-900 sm:text-7xl">
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-coral to-amber">Only Pet's</span>
