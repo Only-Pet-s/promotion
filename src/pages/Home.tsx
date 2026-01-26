@@ -6,13 +6,13 @@ function Home() {
     const scrollToDownload = () => {
         const downloadSection = document.getElementById('download-section');
         if (downloadSection) {
-            downloadSection.scrollIntoView({ behavior: 'smooth' });
+            downloadSection.scrollIntoView({behavior: 'smooth'});
         }
     };
     const toTitle = () => {
         const titleSection = document.getElementById('title');
         if (titleSection) {
-            titleSection.scrollIntoView({ behavior: 'smooth' });
+            titleSection.scrollIntoView({behavior: 'smooth'});
         }
     };
     return (
@@ -43,56 +43,79 @@ function Home() {
                         onClick={scrollToDownload}
                     >
                         <span className="relative z-10">다운로드</span>
-                        <div className="absolute inset-0 bg-gradient-to-r from-amber to-coral opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div
+                            className="absolute inset-0 bg-gradient-to-r from-amber to-coral opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </button>
                 </nav>
             </header>
 
             {/* 메인 Hero 섹션 */}
             <section id="title" className="pt-32 pb-20 px-4 text-center">
-                <span className="mb-4 inline-block rounded-full bg-amber-50 px-4 py-1.5 text-sm font-semibold text-coral">
+                <span
+                    className="mb-4 inline-block rounded-full bg-amber-50 px-4 py-1.5 text-sm font-semibold text-coral">
                     반려동물 전용 숏폼 플랫폼
                 </span>
                 <h1 className="mb-6 text-5xl font-extrabold tracking-tight text-gray-900 sm:text-7xl">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-coral to-amber">Only Pet's</span>
+                    <span
+                        className="text-transparent bg-clip-text bg-gradient-to-r from-coral to-amber">Only Pet's</span>
                 </h1>
                 <p className="mb-10 text-lg text-gray-600">
                     우리 집 이제 전용 앱에서 즐기세요!
                 </p>
             </section>
 
-            <section className="flex flex-col md:flex-row items-center justify-between py-20 px-10 gap-10 bg-gradient-to-br from-blue-50 via-amber/10 to-coral/10 snap-start min-h-screen">
-                <div className="w-full md:w-1/2 flex justify-center">
-                    <img src="src/assets/dog1.jpg" className="w-[50%] max-w-md mx-auto rounded-xl shadow-lg" alt="서비스캡쳐" />
+            <section
+                className="flex flex-col md:flex-row items-center justify-between py-20 px-10 gap-10 bg-gradient-to-br from-blue-50 via-amber/10 to-coral/10 snap-start min-h-screen">
+                <div className="w-full md:w-1/2">
+                    <div className="grid grid-cols-2 gap-4 place-items-center">
+                        <img src="src/assets/feed.png"
+                             className="w-full max-w-[220px] md:max-w-[260px] h-auto rounded-xl shadow-lg" alt="서비스캡쳐"/>
+                        <img src="src/assets/explore.png"
+                             className="w-full max-w-[220px] md:max-w-[260px] h-auto rounded-xl shadow-lg" alt="서비스캡쳐"/>
+                    </div>
                 </div>
                 <div className="w-full md:w-1/2 space-y-4">
-                    <h2 className="text-3xl font-bold">보고, 배우고, 맡기다</h2>
-                    <p className="text-gray-600 leading-relaxed">숏폼, 피드로 일상을 공유하고,<br/> 강의로 배우며,<br/> 믿을 수 있는 펫시터까지 연결합니다.</p>
+                    <h2 className="text-3xl font-bold">Only Pet's로 일상 공유</h2>
+                    <p className="text-gray-600 leading-relaxed">이미지와 쇼츠 영상으로 반려동물의 일상을 기록하고,<br/> 커뮤니티에서 함께 공감하고 소통하세요.
+                    </p>
                 </div>
             </section>
 
             {/* 섹션 2: 텍스트 왼쪽, 이미지 오른쪽 (md:flex-row-reverse 사용) */}
-            <section className="flex flex-col md:flex-row-reverse items-center justify-between py-20 px-10 gap-10 bg-gradient-to-br from-coral/10 via-amber/10 to-blue-50 snap-start min-h-screen">
+            <section
+                className="flex flex-col md:flex-row-reverse items-center justify-between py-20 px-10 gap-10 bg-gradient-to-br from-coral/10 via-amber/10 to-blue-50 snap-start min-h-screen">
                 <div className="w-full md:w-1/2">
-                    <img src="src/assets/cat1.jpg" className="w-[50%] max-w-md mx-auto rounded-xl shadow-lg" alt="서비스캡쳐" />
+                    <div className="grid grid-cols-2 gap-4 place-items-center">
+                        <img src="src/assets/lecturemain.png"
+                             className="w-full max-w-[220px] md:max-w-[260px] h-auto rounded-xl shadow-lg" alt="서비스캡쳐"/>
+                        <img src="src/assets/lecturedetail.png"
+                             className="w-full max-w-[220px] md:max-w-[260px] h-auto rounded-xl shadow-lg" alt="서비스캡쳐"/>
+                    </div>
                 </div>
-                <div className="w-full md:w-1/2 space-y-4 items-center">
-                    <h2 className="w-[50%] mx-auto text-3xl font-bold">반려생활의 모든 순간</h2>
-                    <p className="w-[50%] flex mx-auto text-gray-600 leading-relaxed">반려동물을 키우는<br/> 모든 순간을<br/> 하나의 플랫폼에 담았습니다.</p>
+                <div className="w-full md:w-1/2 space-y-4 md:pl-6">
+                    <h2 className="text-3xl font-bold whitespace-nowrap">강의로 배우는 반려동물 가이드</h2>
+                    <p className="max-w-lg text-gray-600 leading-relaxed">강의 화면에서 전문가 팁과<br/> 실전 노하우를 배우고<br/> 우리 아이에게 바로 적용하세요.</p>
                 </div>
             </section>
 
-            <section className="flex flex-col md:flex-row items-center justify-between py-20 px-10 gap-10 bg-gradient-to-br from-blue-50 via-amber/10 to-coral/10 snap-start min-h-screen">
+            <section
+                className="flex flex-col md:flex-row items-center justify-between py-20 px-10 gap-10 bg-gradient-to-br from-blue-50 via-amber/10 to-coral/10 snap-start min-h-screen">
                 <div className="w-full md:w-1/2">
-                    <img src="src/assets/petsitter1.jpg" className="w-[50%] max-w-md mx-auto rounded-xl shadow-lg" alt="서비스캡쳐" />
+                    <div className="grid grid-cols-2 gap-4 place-items-center">
+                        <img src="src/assets/sitter.png"
+                             className="w-full max-w-[220px] md:max-w-[260px] h-auto rounded-xl shadow-lg" alt="서비스캡쳐"/>
+                        <img src="src/assets/petsittermy.png"
+                             className="w-full max-w-[220px] md:max-w-[260px] h-auto rounded-xl shadow-lg" alt="서비스캡쳐"/>
+                    </div>
                 </div>
                 <div className="w-full md:w-1/2 space-y-4">
-                    <h2 className="text-3xl font-bold">콘텐츠에서 돌봄까지 한 번에</h2>
-                    <p className="text-gray-600 leading-relaxed">즐기는 콘텐츠를 넘어,<br/> 실제 생활에 필요한 돌봄까지 이어집니다.</p>
+                    <h2 className="text-3xl font-bold">믿을 수 있는 펫시터 매칭</h2>
+                    <p className="text-gray-600 leading-relaxed">펫시터 화면에서 조건에 맞는 돌봄을 찾고,<br/> 일정과 후기를 확인해 안심하고 맡기세요.</p>
                 </div>
             </section>
             {/* QR 코드 다운로드 섹션 */}
-            <section id="download-section" className="py-20 px-4 bg-gradient-to-br from-coral/10 via-amber/10 to-blue-50 snap-start min-h-screen scroll-mt-24">
+            <section id="download-section"
+                     className="py-20 px-4 bg-gradient-to-br from-coral/10 via-amber/10 to-blue-50 snap-start min-h-screen scroll-mt-24">
                 <div className="max-w-4xl mx-auto text-center">
                     <h2 className="text-4xl font-bold mb-6 text-gray-900">
                         지금 바로 다운로드하세요
@@ -153,4 +176,5 @@ function Home() {
         </div>
     );
 }
+
 export default Home;
