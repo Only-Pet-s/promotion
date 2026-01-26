@@ -63,7 +63,7 @@ function Home() {
 
             <section className="flex flex-col md:flex-row items-center justify-between py-20 px-10 gap-10 bg-gradient-to-br from-blue-50 via-amber/10 to-coral/10 snap-start min-h-screen">
                 <div className="w-full md:w-1/2 flex justify-center">
-                    <img src="/src/assets/dog1.jpg" className="w-[50%] max-w-md mx-auto rounded-xl shadow-lg" alt="서비스캡쳐" />
+                    <img src="src/assets/dog1.jpg" className="w-[50%] max-w-md mx-auto rounded-xl shadow-lg" alt="서비스캡쳐" />
                 </div>
                 <div className="w-full md:w-1/2 space-y-4">
                     <h2 className="text-3xl font-bold">보고, 배우고, 맡기다</h2>
@@ -74,7 +74,7 @@ function Home() {
             {/* 섹션 2: 텍스트 왼쪽, 이미지 오른쪽 (md:flex-row-reverse 사용) */}
             <section className="flex flex-col md:flex-row-reverse items-center justify-between py-20 px-10 gap-10 bg-gradient-to-br from-coral/10 via-amber/10 to-blue-50 snap-start min-h-screen">
                 <div className="w-full md:w-1/2">
-                    <img src="/src/assets/cat1.jpg" className="w-[50%] max-w-md mx-auto rounded-xl shadow-lg" alt="서비스캡쳐" />
+                    <img src="src/assets/cat1.jpg" className="w-[50%] max-w-md mx-auto rounded-xl shadow-lg" alt="서비스캡쳐" />
                 </div>
                 <div className="w-full md:w-1/2 space-y-4 items-center">
                     <h2 className="w-[50%] mx-auto text-3xl font-bold">반려생활의 모든 순간</h2>
@@ -84,7 +84,7 @@ function Home() {
 
             <section className="flex flex-col md:flex-row items-center justify-between py-20 px-10 gap-10 bg-gradient-to-br from-blue-50 via-amber/10 to-coral/10 snap-start min-h-screen">
                 <div className="w-full md:w-1/2">
-                    <img src="/src/assets/petsitter1.jpg" className="w-[50%] max-w-md mx-auto rounded-xl shadow-lg" alt="서비스캡쳐" />
+                    <img src="src/assets/petsitter1.jpg" className="w-[50%] max-w-md mx-auto rounded-xl shadow-lg" alt="서비스캡쳐" />
                 </div>
                 <div className="w-full md:w-1/2 space-y-4">
                     <h2 className="text-3xl font-bold">콘텐츠에서 돌봄까지 한 번에</h2>
