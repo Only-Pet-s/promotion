@@ -107,7 +107,7 @@ function Home() {
                             <div className="w-64 h-64 bg-gradient-to-br from-coral to-amber p-1 rounded-xl">
                                 <div className="w-full h-full bg-white rounded-lg flex items-center justify-center p-4">
                                     <img
-                                        src="https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=https://onlypets.app/download" // <- 실제 qr url 여기에 입력
+                                        src="src/assets/opqr.jpg" // <- 실제 qr url 여기에 입력
                                         alt="Only Pet's 다운로드 QR 코드"
                                         className="w-full h-full object-contain"
                                     />
