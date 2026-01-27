@@ -1,6 +1,13 @@
 // import { Smartphone, Play } from 'lucide-react';
 
 // import {QrCode} from "lucide-react";
+import feedImg from '../assets/feed.png';
+import exploreImg from '../assets/explore.png';
+import lectureMainImg from '../assets/lecturemain.png';
+import lectureDetailImg from '../assets/lecturedetail.png';
+import sitterImg from '../assets/sitter.png';
+import petSitterMyImg from '../assets/petsittermy.png';
+import opQrImg from '../assets/opqr.jpg';
 
 function Home() {
     const scrollToDownload = () => {
@@ -68,9 +75,9 @@ function Home() {
                 className="flex flex-col md:flex-row items-center justify-between py-20 px-10 gap-10 bg-gradient-to-br from-blue-50 via-amber/10 to-coral/10 snap-start min-h-screen">
                 <div className="w-full md:w-1/2">
                     <div className="grid grid-cols-2 gap-4 place-items-center">
-                        <img src="src/assets/feed.png"
+                        <img src={feedImg}
                              className="w-full max-w-[220px] md:max-w-[260px] h-auto rounded-xl shadow-lg" alt="서비스캡쳐"/>
-                        <img src="src/assets/explore.png"
+                        <img src={exploreImg}
                              className="w-full max-w-[220px] md:max-w-[260px] h-auto rounded-xl shadow-lg" alt="서비스캡쳐"/>
                     </div>
                 </div>
@@ -86,9 +93,9 @@ function Home() {
                 className="flex flex-col md:flex-row-reverse items-center justify-between py-20 px-10 gap-10 bg-gradient-to-br from-coral/10 via-amber/10 to-blue-50 snap-start min-h-screen">
                 <div className="w-full md:w-1/2">
                     <div className="grid grid-cols-2 gap-4 place-items-center">
-                        <img src="src/assets/lecturemain.png"
+                        <img src={lectureMainImg}
                              className="w-full max-w-[220px] md:max-w-[260px] h-auto rounded-xl shadow-lg" alt="서비스캡쳐"/>
-                        <img src="src/assets/lecturedetail.png"
+                        <img src={lectureDetailImg}
                              className="w-full max-w-[220px] md:max-w-[260px] h-auto rounded-xl shadow-lg" alt="서비스캡쳐"/>
                     </div>
                 </div>
@@ -102,9 +109,9 @@ function Home() {
                 className="flex flex-col md:flex-row items-center justify-between py-20 px-10 gap-10 bg-gradient-to-br from-blue-50 via-amber/10 to-coral/10 snap-start min-h-screen">
                 <div className="w-full md:w-1/2">
                     <div className="grid grid-cols-2 gap-4 place-items-center">
-                        <img src="src/assets/sitter.png"
+                        <img src={sitterImg}
                              className="w-full max-w-[220px] md:max-w-[260px] h-auto rounded-xl shadow-lg" alt="서비스캡쳐"/>
-                        <img src="src/assets/petsittermy.png"
+                        <img src={petSitterMyImg}
                              className="w-full max-w-[220px] md:max-w-[260px] h-auto rounded-xl shadow-lg" alt="서비스캡쳐"/>
                     </div>
                 </div>
@@ -130,7 +137,7 @@ function Home() {
                             <div className="w-64 h-64 bg-gradient-to-br from-coral to-amber p-1 rounded-xl">
                                 <div className="w-full h-full bg-white rounded-lg flex items-center justify-center p-4">
                                     <img
-                                        src="src/assets/opqr.jpg" // <- 실제 qr url 여기에 입력
+                                        src={opQrImg} // <- 실제 qr url 여기에 입력
                                         alt="Only Pet's 다운로드 QR 코드"
                                         className="w-full h-full object-contain"
                                     />
